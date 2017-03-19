@@ -2,6 +2,7 @@
 {%set version = "2.19.0" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "1a249d6f2413195a86478a3de774a27b11798b4a477eb1e8217d8e40b89bfcfe" %}
+{%set build_num = "0" %}
 
 package:
   name: {{ name }}
@@ -13,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -41,10 +42,13 @@ test:
     - keystoneauth1.extras
 
 about:
-  home: http://docs.openstack.org/developer/keystoneauth/
+  home: https://docs.openstack.org/developer/keystoneauth/
+  license_file: LICENSE
   license: Apache 2.0
   license_family: Apache
-  summary: 'Authentication Library for OpenStack Identity'
+  summary: Authentication Library for OpenStack Identity
+  dev_url: https://git.openstack.org/cgit/openstack/keystoneauth
+  doc_url: https://docs.openstack.org/developer/keystoneauth/
 
 extra:
   recipe-maintainers:
