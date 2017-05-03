@@ -1,7 +1,7 @@
 {%set name = "keystoneauth1" %}
-{%set version = "2.19.0" %}
+{%set version = "2.20.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "1a249d6f2413195a86478a3de774a27b11798b4a477eb1e8217d8e40b89bfcfe" %}
+{%set hash_val = "6bb45250f2e716302f9572f3f5440baf4b7339a93e0ea33c38ac501294da9b2e" %}
 {%set build_num = "0" %}
 
 package:
@@ -25,7 +25,7 @@ requirements:
 
   run:
     - python
-    - pbr >=2.0.0
+    - pbr !=2.1.0,>=2.0.0
     - iso8601 >=0.1.11
     - positional >=1.1.1
     - requests !=2.12.2,!=2.13.2,>=2.10.0
