@@ -1,17 +1,18 @@
-{%set name = "keystoneauth1" %}
-{%set version = "2.20.0" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "6bb45250f2e716302f9572f3f5440baf4b7339a93e0ea33c38ac501294da9b2e" %}
-{%set build_num = "0" %}
+{% set name = "keystoneauth1" %}
+{% set version = "2.20.1" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "1955971f51e713a89e0789a1ff3d30a3a717a7af4ad4e97b36cefb9046f4f5f8" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
   number: {{ build_num }}
@@ -28,10 +29,10 @@ requirements:
     - pbr !=2.1.0,>=2.0.0
     - iso8601 >=0.1.11
     - positional >=1.1.1
-    - requests !=2.12.2,!=2.13.2,>=2.10.0
+    - requests !=2.12.2,!=2.13.0,>=2.10.0
     - six >=1.9.0
     - stevedore >=1.20.0
-
+    
 test:
   imports:
     - keystoneauth1
