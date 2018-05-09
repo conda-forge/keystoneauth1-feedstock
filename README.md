@@ -19,10 +19,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-keystoneauth1-green.svg)](https://anaconda.org/conda-forge/keystoneauth1)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-keystoneauth1-green.svg)](https://anaconda.org/conda-forge/keystoneauth1) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/keystoneauth1.svg)](https://anaconda.org/conda-forge/keystoneauth1) |
 
 Installing keystoneauth1
 ========================

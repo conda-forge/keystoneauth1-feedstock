@@ -1,8 +1,8 @@
 {% set name = "keystoneauth1" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "0579c112df9ab6764d6e005b7bacbaf2524f7cfcf9a89cc041b2b72d00414268" %}
+{% set hash = "ed1bcdaec0738076fe730d37654488556146b2bff7f32e78baa25c9779cf3814" %}
 
 package:
   name: {{ name }}
@@ -28,10 +28,10 @@ requirements:
     - python
     - pbr !=2.1.0,>=2.0.0
     - iso8601 >=0.1.11
-    - positional >=1.1.1
     - requests >=2.14.2
     - six >=1.10.0
     - stevedore >=1.20.0
+    - os-service-types >=1.2.0
     
 test:
   imports:
