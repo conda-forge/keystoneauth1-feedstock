@@ -1,8 +1,8 @@
 {% set name = "keystoneauth1" %}
-{% set version = "3.15.0" %}
+{% set version = "3.16.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "439f7dcf6edde5ea5a16ef90603d198e118a03f529aba0f8a6d19d5f6433de95" %}
+{% set hash = "0465ed3e69ec0a148a5785f59f6fd3cece7808090cbcb90a2d2cb27ab360d9d7" %}
 
 package:
   name: {{ name }}
