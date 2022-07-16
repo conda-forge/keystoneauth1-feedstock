@@ -1,5 +1,5 @@
 {% set name = "keystoneauth1" %}
-{% set version = "4.6.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 066f1addd89114cd6a1b9cb3555c8eaa7d013673ee1034bdfe506068804a9e05
+  sha256: 6ebb5f044c9dfd263087a328d51d479947d1ddc90c09daf4191df7dc71334323
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python >=3.6
+    - python >=3.8
     - pbr !=2.1.0,>=2.0.0
     - iso8601 >=0.1.11
     - requests >=2.14.2
