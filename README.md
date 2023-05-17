@@ -1,11 +1,11 @@
-About keystoneauth1
-===================
+About keystoneauth1-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keystoneauth1-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.openstack.org/developer/keystoneauth/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/keystoneauth1-feedstock/blob/main/LICENSE.txt)
 
 Summary: Authentication Library for OpenStack Identity
 
