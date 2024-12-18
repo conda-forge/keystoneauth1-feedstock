@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python 3.9
+    - python {{ python_min }}
     - pip
     - pbr !=2.1.0,>=2.0.0
     - setuptools
 
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pbr !=2.1.0,>=2.0.0
     - iso8601 >=0.1.11
     - requests >=2.14.2
@@ -31,6 +31,8 @@ requirements:
     - typing-extensions >=4.12
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - keystoneauth1
     - keystoneauth1.identity
