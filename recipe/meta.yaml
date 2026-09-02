@@ -34,6 +34,7 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - keystoneauth1
     - keystoneauth1.identity
@@ -41,6 +42,8 @@ test:
     - keystoneauth1.identity.v3
     - keystoneauth1.identity.generic
     - keystoneauth1.extras
+  commands:
+    - pip check
 
 about:
   home: https://docs.openstack.org/developer/keystoneauth/
